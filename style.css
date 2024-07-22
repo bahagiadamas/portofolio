@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS SYNTAX */
+html{
+    font-family: 'Poppins';
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+header{
+    background-image: url(https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721606400&semt=ais_user);
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    word-spacing: 20px;
+    height: 10%;
+    margin: 0px auto 10px auto;
+}
+.navbar ul{
+    font-size: 1.5vmax;
+    position: absolute;
+    left: 5%;
+}
+.navbar button{
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    width: 12vmax;
+    height: 3vmax;
+    background-color: white;
+    color: black;
+}
+.navbar button:active{
+    color:crimson;
+    text-decoration: underline;
+}
+
+.navbar li{
+    font-weight: 450;
+    display: inline;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.navbar a:active{
+    color: lightgreen;
+}
+
+.hero{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 80%;
+    margin: 0px auto 10px auto;
+}
+.hero-txt{
+    width: 50vw;
+    border: 1px solid black;
+    color: white;
+}
+.hero-txt h1{
+    font-size: calc(2vw + 1.5rem);
+    line-height: 1.2em;
+    margin: 0px auto 10px auto;
+}
+.hero-txt p{
+    font-style: italic;
+    margin: 0px auto 10px auto;
+    font-size: 1.5rem;
+}
+.hero-img{
+    border: 1px solid black;
+}
+.hero-img img{
+    display: block;
+    max-width: 25vmax;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.hero .attachments{
+    position: absolute;
+    bottom: 10vh;
+    border: 1px black solid;
+}
+.hero .attachments a{
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+}
+.hero-txt button{
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    width: 12vmax;
+    height: 3vmax;
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.hero-txt button:active{
+    color:crimson;
+    text-decoration: underline;
+}
+.hero-txt .hero-button{
+    padding-top: 10px;
+}
+
+section{
+    background-color: whitesmoke;
+    width: 95vw;
+    height: 200vh;
+    margin: 10px auto auto auto;
+}
+.about{
+    line-height: 1.2em;
+    background-color: salmon;
+}
