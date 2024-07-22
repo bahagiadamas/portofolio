@@ -81,6 +81,22 @@ header{
     height: 10%;
     margin: 0px auto 10px auto;
 }
+/* NAVBAR HAMBURGER */
+
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+/* END OF NAVBAR HAMBURGER */
 .navbar ul{
     font-size: 1.5vmax;
     position: absolute;
@@ -121,7 +137,6 @@ header{
 }
 
 .hero{
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,7 +146,6 @@ header{
 }
 .hero-txt{
     width: 50vw;
-    border: 1px solid black;
     color: white;
 }
 .hero-txt h1{
@@ -144,19 +158,15 @@ header{
     margin: 0px auto 10px auto;
     font-size: 1.5rem;
 }
-.hero-img{
-    border: 1px solid black;
-}
 .hero-img img{
-    display: block;
-    max-width: 25vmax;
+    transform: scale(1);
+    border: 1px solid white;
+    max-width: 28vmax;
     border-radius: 50%;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .hero .attachments{
     position: absolute;
     bottom: 10vh;
-    border: 1px black solid;
 }
 .hero .attachments a{
     text-align: center;
