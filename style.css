@@ -69,7 +69,7 @@ p{
 }
 
 header{
-    background-image: url(https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721606400&semt=ais_user);
+    background-image: url(img/bg1.jpeg);
     background-size: cover;
     height: 100vh;
 }
@@ -78,12 +78,14 @@ header{
     display: flex;
     align-items: center;
     word-spacing: 20px;
-    height: 10%;
+    height: 100px;
     margin: 0px auto 10px auto;
 }
 /* NAVBAR HAMBURGER */
 
 .menu-toggle{
+    position: relative;
+    left: 1vw;
     display: flex;
     flex-direction: column;
     height: 20px;
@@ -107,18 +109,20 @@ header{
     position: absolute;
     cursor: pointer;
     font-family: 'Poppins';
-    font-size: 1.2rem;
+    font-size: calc(.5vmax + 1rem);
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 3vmax;
     border: 1px solid transparent;
     width: 12vmax;
     height: 3vmax;
     background-color: white;
     color: black;
+    box-shadow: 0px 9px 1px -5px rgba(0, 0, 0, 1);
+    transition: .2s;
 }
 .navbar button:active{
-    color:crimson;
-    text-decoration: underline;
+    margin-top: 5px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 }
 
 .navbar li{
@@ -139,68 +143,94 @@ header{
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 90vw;
     height: 80%;
     margin: 0px auto 10px auto;
 }
 .hero-txt{
-    width: 50vw;
-    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
 }
 .hero-txt h1{
-    font-size: calc(2vw + 1.5rem);
+    font-size: calc(4vw + 1.5rem);
     line-height: 1.2em;
     margin: 0px auto 10px auto;
 }
 .hero-txt p{
     font-style: italic;
     margin: 0px auto 10px auto;
-    font-size: 1.5rem;
+    font-size: calc(1vh + 1.5rem);
 }
-.hero-img img{
-    transform: scale(1);
-    border: 1px solid white;
-    max-width: 28vmax;
-    border-radius: 50%;
-}
-.hero .attachments{
+
+
+.hero-button{
     position: absolute;
-    bottom: 10vh;
-}
-.hero .attachments a{
-    text-align: center;
-    font-size: 1.4em;
-    color: white;
+    left: 44vw;
 }
 .hero-txt button{
     cursor: pointer;
     font-family: 'Poppins';
-    font-size: 1rem;
+    font-size: calc(.5vmax + 1rem);
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 3vmax;
     border: 1px solid transparent;
     width: 12vmax;
     height: 3vmax;
     background-color: white;
     color: black;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 9px 1px -5px rgba(0, 0, 0, 1);
+    transition: .2s;
 }
 .hero-txt button:active{
-    color:crimson;
-    text-decoration: underline;
+    margin-top: 5px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 }
 .hero-txt .hero-button{
     padding-top: 10px;
 }
 
 section{
-    background-color: whitesmoke;
+    background-color: rgb(212, 212, 212);
     width: 95vw;
     height: 200vh;
-    margin: 10px auto auto auto;
+    margin: 50px auto auto auto;
+    padding-top: 50px;
+    box-shadow: -1px 0px 5px 5px rgba(0, 0, 0, .5);
 }
 .about{
-    line-height: 1.2em;
-    background-color: salmon;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 3vmax;
+    overflow: hidden;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+}
+.about img{
+    transform: scale(2);
+    width: 20vmax;
+    border-radius: 50%;
+}
+.about .attachments{
+    order: 2;
+    text-align: center;
+}
+.about-txt{
+    width: 50%;
+    line-height: 1.5;
+    order: 1;
+}
+.about-txt p{
+    margin-bottom: 10vh;
+    text-align: justify;
+}
+.about a{
+    font-size: 1.4em;
+    color: black;
 }
