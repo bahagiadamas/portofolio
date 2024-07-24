@@ -67,19 +67,34 @@ p{
     font-size: 16px;
     font-weight: normal;
 }
-
-header{
+body{
     background-image: url(img/bg1.jpeg);
+    background-size: 100vw 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
     background-size: cover;
     height: 100vh;
 }
 
 .navbar{
+    border-bottom: 1px solid grey;
+    z-index: 9999;
+    width: 100vw;
+    position: fixed;
     display: flex;
+    background: rgba(121, 121, 121, .4);
     align-items: center;
     word-spacing: 20px;
-    height: 100px;
+    height: 90px;
     margin: 0px auto 10px auto;
+    transition: .2s;
+}
+.navbar:hover{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .5);
+    background: rgba(121, 121, 121, 1);
 }
 /* NAVBAR HAMBURGER */
 
@@ -191,30 +206,23 @@ header{
 }
 
 section{
-    background-color: rgb(212, 212, 212);
-    width: 95vw;
-    height: 200vh;
-    margin: 50px auto auto auto;
-    padding-top: 50px;
-    box-shadow: -1px 0px 5px 5px rgba(0, 0, 0, .5);
+    background: rgba(238, 238, 238, 1);
+    box-shadow: 1px 0px 5px 5px rgba(0, 0, 0, .5);
 }
-
+.content {
+    margin: auto;
+}
 /* ANIMASI DI SECTION */
 
 .about{
     margin: auto;
-    border: 1px solid transparent;
-    border-radius: 3vmax;
+    padding-top: 90px;
+    padding-bottom: 90px;
     overflow: hidden;
-    height: 50vmin;
     width: 90%;
     display: flex;
     align-items:center;
-    justify-content: space-around;
-    transition: .5s;
-}
-.about:hover{
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+    justify-content: space-between;
 }
 .about img{
     transform: scale(1.5);
@@ -231,10 +239,41 @@ section{
     order: 1;
 }
 .about-txt p{
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     text-align: justify;
 }
 .about a{
     font-size: 1.4em;
     color: black;
+}
+
+.education {
+    font-size: calc(1vh + 1em);
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    max-width: 90%;
+    margin: 0px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.edu-detail {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.edu {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+    margin: auto;
+    background-color: white;
+    border-radius: 2vh;
+    width: 30vw;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 10px
+}
+.edu img{
+    padding: 20px;
+    width: 15vw;
 }
