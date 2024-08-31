@@ -1,0 +1,49 @@
+:root {
+    @apply font-poppins text-slate-900;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-extrabold tracking-wide;
+    }
+
+    h2 {
+        @apply lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold tracking-wide;
+    }
+
+    h3 {
+        @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wide;
+    }
+
+    h4 {
+        @apply lg:text-3xl md:text-2xl sm:text-xl text-lg font-semibold tracking-wide;
+    }
+
+    h5 {
+        @apply lg:text-2xl md:text-xl sm:text-lg text-base font-semibold tracking-wide;
+    }
+
+    h6 {
+        @apply lg:text-xl md:text-lg sm:text-base text-sm font-semibold tracking-wide;
+    }
+
+    header {
+        @apply w-[100vw] h-[50px] flex items-center px-5 z-[999];
+    }
+
+    nav{
+        @apply flex gap-5;
+    }
+
+    nav a {
+        @apply uppercase tracking-wide block bg-sky-50/25 px-2 py-1 font-[500] rounded-lg text-white hover:scale-105 duration-300;
+    }
+
+    section {
+        @apply w-[100vw] h-[100vh] bg-cover -mt-[50px] overflow-hidden;
+    }
+}
