@@ -10,24 +10,54 @@
     <title>Damas Bahagia Ika Cipta</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="relative z-[999] w-[100vw] h-[50px] flex items-center">
+        <span class="text-5xl text-white absolute right-1 px-1  top-1 cursor-pointer md:hidden">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+        <nav id="navMenu" class="md:relative px-5 md:flex md:gap-5 absolute top-0 right-0 -z-[9999] md:z-auto opacity-0 md:opacity-100 block duration-500">
+            <ion-icon class="w-full text-5xl text-white" name="close" onclick="CloseMenu(this)"></ion-icon>
             <a href="#">home</a>
             <a href="#">about</a>
             <a href="#">contact</a>
         </nav>
     </header>
 
-    <main>
-        <section id="home" style="background-image: url(img/bg1.jpg);">
-            <div class="flex items-center h-full w-full">
-                <span class="text-white p-5">
-                    <h1 class="mb-5">Damas Bahagia <br> Ika Cipta</h1>
-                    <h5>Business Development & Community Growth Strategist</h5>
-                </span>
-                <img src="img/Damas.png" alt="DAMAS BAHAGIA IKA CIPTA" class="w-1/2">
+    <main class="slider">
+        <section class="list">
+            <!-- ITEM 1 -->
+            <div class="item flex items-center">
+                <img src="img/bg1.jpg" alt="bg1" class="w-full h-full object-cover">
+                <div class="content px-5">
+                    <span class="order-2 md:order-1 text-center md:text-left">
+                        <h2 class="mb-5">DAMAS BAHAGIA IKA CIPTA</h2>
+                        <h5>Business Development & Community Growth Strategist</h5>
+                    </span>
+                    <img src="img/Damas.png" alt="DAMAS BAHAGIA IKA CIPTA" class="order-1 md:order-2 md:w-1/2 lg:w-1/2 w-3/4 border-2 rounded-full lg:border-none lg:rounded-none">
+                </div>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="item flex items-center">
+                <img src="img/bg2.jpg" alt="bg2" class="w-full h-full object-cover">
+                <div class="content px-5">
+                    <span class="order-2 md:order-1 text-justify md:text-left">
+                        <h2 class="mb-5">ABOUT ME</h2>
+                        <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero facilis soluta nesciunt ipsam quisquam reprehenderit natus quasi adipisci laboriosam. Labore explicabo iste eaque hic fuga quam modi. Ea, labore. Reprehenderit architecto ut magnam quos animi minima modi maxime at. Neque labore eveniet aspernatur impedit ullam natus deserunt adipisci rerum fuga.</h5>
+                        <a href="#" class="block p-3 bg-sky-500 active:bg-sky-700 w-fit mt-10 rounded-xl hover:scale-105 duration-500"><h4>Download CV</h4></a>
+                    </span>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="arrows">
+                <button><h4>&lt;</h4></button>
+                <button><h4>&gt;</h4></button>
             </div>
         </section>
     </main>
+
+    <!-- ION ICON -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

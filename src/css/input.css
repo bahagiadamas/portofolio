@@ -30,20 +30,42 @@
     h6 {
         @apply lg:text-xl md:text-lg sm:text-base text-sm font-semibold tracking-wide;
     }
-
-    header {
-        @apply w-[100vw] h-[50px] flex items-center px-5 z-[999];
+    .slider {
+        @apply w-[100vw] h-[100vh] overflow-hidden -mt-[50px] relative ;
     }
 
-    nav{
-        @apply flex gap-5;
+}
+
+@layer components {
+    nav {
+        @apply bg-slate-900 py-10 h-[100vh] w-[40vw] md:bg-transparent md:py-0 md:h-fit md:w-fit
     }
 
     nav a {
-        @apply uppercase tracking-wide block bg-sky-50/25 px-2 py-1 font-[500] rounded-lg text-white hover:scale-105 duration-300;
+        @apply text-white md:text-black block md:bg-white uppercase tracking-wide md:px-2 md:py-1 rounded-lg font-[500] md:hover:scale-105 md:duration-500 my-10;
     }
 
-    section {
-        @apply w-[100vw] h-[100vh] bg-cover -mt-[50px] overflow-hidden;
+    .slider .list .item {
+        @apply absolute inset-0;
+    }
+
+    .slider .list .item > img {
+        @apply w-full h-full object-cover object-center;
+    }
+
+    /* .content {
+        @apply absolute w-full max-w-[90%] m-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white flex flex-col md:flex-row md:justify-between items-center gap-5;
+    } */
+
+    .content {
+        @apply text-white absolute flex flex-col md:flex-row items-center justify-between gap-5;
+    }
+
+    .arrows {
+        @apply flex items-center absolute top-[80%] left-1/2 -translate-x-1/2 gap-10;
+    }
+
+    .arrows button {
+        @apply w-[40px] h-[40px] border-2 border-pink-900 rounded-full shadow-lg bg-black font-bold text-pink-900 cursor-pointer z-[100] duration-500 hover:bg-pink-900 hover:text-black;
     }
 }
