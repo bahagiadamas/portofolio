@@ -738,7 +738,7 @@ h6 {
 
 nav {
   height: 100vh;
-  width: 40vw;
+  width: 30vw;
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   padding-top: 2.5rem;
@@ -886,36 +886,12 @@ nav a {
   top: 0.25rem;
 }
 
-.-right-0 {
-  right: -0px;
-}
-
-.-right-full {
-  right: -100%;
+.-z-\[9999\] {
+  z-index: -9999;
 }
 
 .z-\[999\] {
   z-index: 999;
-}
-
-.z-\[-100\] {
-  z-index: -100;
-}
-
-.-z-\[100\] {
-  z-index: -100;
-}
-
-.-z-\[1000\] {
-  z-index: -1000;
-}
-
-.-z-\[10\] {
-  z-index: -10;
-}
-
-.-z-\[9999\] {
-  z-index: -9999;
 }
 
 .order-1 {
@@ -973,10 +949,6 @@ nav a {
 
 .items-center {
   align-items: center;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .rounded-full {
@@ -1055,10 +1027,6 @@ nav a {
 @media (min-width: 768px) {
   .md\:relative {
     position: relative;
-  }
-
-  .md\:-right-0 {
-    right: -0px;
   }
 
   .md\:z-auto {

@@ -38,7 +38,7 @@
 
 @layer components {
     nav {
-        @apply bg-slate-900 py-10 h-[100vh] w-[40vw] md:bg-transparent md:py-0 md:h-fit md:w-fit
+        @apply bg-slate-900 py-10 h-[100vh] w-[30vw] md:bg-transparent md:py-0 md:h-fit md:w-fit
     }
 
     nav a {
