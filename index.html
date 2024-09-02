@@ -18,6 +18,9 @@
             <ion-icon class="w-full text-5xl text-white" name="close" onclick="CloseMenu(this)"></ion-icon>
             <a href="#">home</a>
             <a href="#">about</a>
+            <a href="#">education</a>
+            <a href="#">experiences</a>
+            <a href="#">projects</a>
             <a href="#">contact</a>
         </nav>
     </header>
@@ -25,7 +28,7 @@
     <main class="slider">
         <section class="list">
             <!-- ITEM 1 -->
-            <div class="item flex items-center">
+            <div id="home" class="item flex items-center">
                 <img src="img/bg1.jpg" alt="bg1" class="w-full h-full object-cover">
                 <div class="content px-5">
                     <span class="order-2 md:order-1 text-center md:text-left">
@@ -35,8 +38,9 @@
                     <img src="img/Damas.png" alt="DAMAS BAHAGIA IKA CIPTA" class="order-1 md:order-2 md:w-1/2 lg:w-1/2 w-3/4 border-2 rounded-full lg:border-none lg:rounded-none">
                 </div>
             </div>
+
             <!-- ITEM 2 -->
-            <div class="item flex items-center">
+            <div id="about" class="item flex items-center">
                 <img src="img/bg2.jpg" alt="bg2" class="w-full h-full object-cover">
                 <div class="content px-5">
                     <span class="order-2 md:order-1 text-justify md:text-left">
@@ -47,7 +51,87 @@
                 </div>
             </div>
 
+            <!-- ITEM 3 -->
+            <div id="education" class="item flex items-center">
+                <img src="img/bg3.jpg" alt="bg3" class="w-full h-full object-cover">
+                <div class="content px-5">
+                    <span class="order-2 md:order-1 text-justify md:text-left">
+                        <h2 class="mb-5">EDUCATION</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="card">
+                                <img src="img/ut.png" alt="LOGO UNIVERSITAS TERBUKA">
+                                <span>
+                                    <h3>TERBUKA UNIVERSITY</h3>
+                                    <p>Bachelor Degree</p>
+                                    <p>General Management</p>
+                                    <p>September 2023 - Present</p>
+                                </span>
+                            </div>
+                            <div class="card">
+                                <img src="img/unsoed.png" alt="LOGO UNIVERSITAS JENDERAL SOEDIRMAN">
+                                <span>
+                                    <h3>JENDERAL SOEDIRMAN UNIVERSITY</h3>
+                                    <p>Associate Degree</p>
+                                    <p>Aquaculture</p>
+                                    <p>September 2018 - September 2021 (GPA: 3.61/4.00)</p>
+                                </span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
             </div>
+
+            <!-- ITEM 4 -->
+            <div id="experiences" class="item flex items-center">
+                <img src="img/bg4.jpg" alt="bg4" class="w-full h-full object-cover">
+                <div class="content px-5">
+                    <span class="text-justify md:text-left">
+                        <h2 class="mb-5">WORK EXPERIENCES</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <div class="card">
+                                <div class="grid grid-cols-3 gap-3 justify-items-center items-center">
+                                    <img src="img/dndkirim.webp" alt="DND KIRIM" class="rounded-full border-2">
+                                    <span class="col-span-2">
+                                        <h4>DND KIRIM</h4>
+                                        <p>Business Development</p>
+                                        <p>February 2024 - Present</p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-justify indent-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sequi.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="grid grid-cols-3 gap-3 justify-items-center items-center">
+                                    <img src="img/jala.png" alt="JALA TECH" class="rounded-full border-2">
+                                    <span class="col-span-2">
+                                        <h4>JALA TECH</h4>
+                                        <p>Community Development Executive</p>
+                                        <p>January 2023 - October 2023</p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <p class="text-justify indent-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptates.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="grid grid-cols-3 gap-3 justify-items-center items-center">
+                                    <img src="img/jala.png" alt="JALA TECH" class="rounded-full border-2">
+                                    <span class="col-span-2">
+                                        <h4>JALA TECH</h4>
+                                        <p>Field Assistant</p>
+                                        <p>April 2022 - December 2022</p>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            
 
             <div class="arrows">
                 <button><h4>&lt;</h4></button>
