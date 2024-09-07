@@ -62,7 +62,7 @@
     }
 
     .arrows {
-        @apply flex items-center absolute top-[90%] left-1/2 -translate-x-1/2 gap-10;
+        @apply flex items-center absolute top-[90%] left-1/2 -translate-x-1/2 gap-10 z-[999];
     }
 
     .arrows button {

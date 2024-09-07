@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,18 +28,6 @@
 
     <main class="slider">
         <section class="list">
-            <!-- ITEM 1 -->
-            <div id="home" class="item flex items-center">
-                <img src="img/bg1.jpg" alt="bg1" class="w-full h-full object-cover">
-                <div class="content px-5">
-                    <span class="order-2 md:order-1 text-center md:text-left">
-                        <h2 class="mb-5">DAMAS BAHAGIA IKA CIPTA</h2>
-                        <h5>Business Development & Community Growth Strategist</h5>
-                    </span>
-                    <img src="img/Damas.png" alt="DAMAS BAHAGIA IKA CIPTA" class="order-1 md:order-2 md:w-1/2 lg:w-1/2 w-3/4 border-2 rounded-full lg:border-none lg:rounded-none">
-                </div>
-            </div>
-
             <!-- ITEM 2 -->
             <div id="about" class="item flex items-center">
                 <img src="img/bg2.jpg" alt="bg2" class="w-full h-full object-cover">
@@ -131,13 +120,25 @@
                 </div>
             </div>
 
-            
-
-            <div class="arrows">
-                <button><h4>&lt;</h4></button>
-                <button><h4>&gt;</h4></button>
+            <!-- ITEM 1 -->
+            <div id="home" class="item flex items-center">
+                <img src="img/bg1.jpg" alt="bg1" class="w-full h-full object-cover">
+                <div class="content px-5">
+                    <span class="order-2 md:order-1 text-center md:text-left">
+                        <h2 class="mb-5">DAMAS BAHAGIA IKA CIPTA</h2>
+                        <h5>Business Development & Community Growth Strategist</h5>
+                    </span>
+                    <img src="img/Damas.png" alt="DAMAS BAHAGIA IKA CIPTA" class="order-1 md:order-2 md:w-1/2 lg:w-1/2 w-3/4 border-2 rounded-full lg:border-none lg:rounded-none">
+                </div>
             </div>
+
         </section>
+
+        <div class="arrows">
+            <button id="prev" class="z-[9999]"><h4>&lt;</h4></button>
+            <button id="next" class="z-[9999]"><h4>&gt;</h4></button>
+        </div>
+
     </main>
 
     <!-- ION ICON -->

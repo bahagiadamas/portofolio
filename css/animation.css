@@ -1,0 +1,25 @@
+.slider.next {
+    opacity: 0%;
+    animation: nextopacity 1.5s linear 1 forwards;
+}
+
+@keyframes nextopacity {
+    to {
+        opacity: 100%;
+    }
+}
+.slider.prev {
+    opacity: 0%;
+    animation: prevopacity 1.5s linear 1 forwards;
+}
+
+@keyframes prevopacity {
+    to {
+        opacity: 100%;
+    }
+}
+
+.slider.next .arrows button,
+.slider.prev .arrows button {
+    pointer-events: none;
+}
