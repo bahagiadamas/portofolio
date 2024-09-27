@@ -73,15 +73,15 @@
         @apply grid p-3 grid-cols-1 justify-items-center bg-gray-200 text-center rounded-xl text-slate-900 shadow-lg hover:scale-105 duration-500;
     }
 
-    #experiences .card {
-        @apply grid p-3 gap-5 grid-cols-1 justify-items-center bg-slate-200/90 rounded-xl text-left text-slate-900 shadow-lg hover:scale-105 duration-500;
+    #education .card img {
+        @apply w-1/4 md:w-1/3 lg:w-1/6;
     }
 
-    #education .card img {
-        @apply w-1/4 lg:w-1/6 md:w-1/3;
+    #experiences .card {
+        @apply grid grid-cols-2 justify-items-center items-center bg-gray-200 p-2 gap-2 rounded-xl text-slate-900 shadow-lg hover:scale-105 duration-500;
     }
 
     #experiences .card img {
-        @apply w-3/4 md:w-full;
+        @apply w-1/2 md:w-3/4 lg:w-[150px] rounded-full object-cover;
     }
 }

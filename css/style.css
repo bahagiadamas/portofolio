@@ -828,6 +828,7 @@ nav a {
   position: absolute;
   top: 90%;
   left: 50%;
+  z-index: 999;
   display: flex;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -885,29 +886,6 @@ nav a {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-#experiences .card {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  justify-items: center;
-  gap: 1.25rem;
-  border-radius: 0.75rem;
-  background-color: rgb(226 232 240 / 0.9);
-  padding: 0.75rem;
-  text-align: left;
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-duration: 500ms;
-}
-
-#experiences .card:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 #education .card img {
   width: 25%;
 }
@@ -924,13 +902,46 @@ nav a {
   }
 }
 
+#experiences .card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-duration: 500ms;
+}
+
+#experiences .card:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 #experiences .card img {
-  width: 75%;
+  width: 50%;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
   #experiences .card img {
-    width: 100%;
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #experiences .card img {
+    width: 150px;
   }
 }
 
@@ -962,6 +973,10 @@ nav a {
   z-index: -9999;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -972,10 +987,6 @@ nav a {
 
 .order-2 {
   order: 2;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
 }
 
 .mb-5 {
@@ -1031,20 +1042,12 @@ nav a {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .items-center {
   align-items: center;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
-.gap-3 {
-  gap: 0.75rem;
+.justify-center {
+  justify-content: center;
 }
 
 .gap-5 {
@@ -1061,6 +1064,11 @@ nav a {
 
 .border-2 {
   border-width: 2px;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-sky-500 {
@@ -1095,13 +1103,14 @@ nav a {
   text-align: justify;
 }
 
-.indent-10 {
-  text-indent: 2.5rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-white {
@@ -1157,12 +1166,12 @@ nav a {
     width: 50%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:w-\[96vw\] {
+    width: 96vw;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:gap-5 {
