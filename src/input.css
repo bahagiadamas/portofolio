@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    :root {
+        @apply
+        font-Poppins
+        box-border;
+    }
+    html {
+        @apply font-[62.5%] scroll-smooth;
+    }
+    body {
+        @apply overflow-x-hidden bg-Shadow/85;
+    }
+    main>section {
+        @apply min-h-[100vh] lg:px-[9%] px-3;
+    }
+}
+
+@layer components {
+    header {
+        @apply
+            bg-Shadow
+            flex
+            justify-between
+            items-center
+            p-2
+            fixed
+            w-[100vw]
+            h-[10vh]
+            z-[100]
+            opacity-100
+            duration-500
+    }
+
+    .menu {
+        @apply
+            text-5xl
+            text-white
+            cursor-pointer
+            lg:hidden
+    }
+
+    .logo {
+        @apply
+            text-[3rem]
+            text-white
+            font-[800]
+            cursor-pointer
+            duration-300
+            hover:scale-110
+    }
+
+    nav {
+        @apply
+            lg:bg-transparent
+            lg:static
+            w-[50%]
+            absolute
+            right-0
+            top-[10vh]
+            bg-Shadow
+            p-[2rem]
+            lg:p-2
+            lg:pr-7
+            lg:flex
+            lg:justify-end
+            lg:w-[100%]
+            duration-500
+            rounded-bl-lg
+            lg:rounded-bl-none
+            border-l-sky-600
+            border-solid
+            border-l-[2px]
+            border-b-sky-600
+            border-b-[2px]
+            lg:border-none
+            
+    }
+
+    nav a {
+        @apply
+            block
+            lg:mx-4
+            my-9
+            lg:my-0
+            lg:inline-block
+            md:text-[1.4rem]
+            lg:text-[1.5rem]
+            text-white
+            font-[500]
+            border-b-[3px]
+            duration-300
+            border-transparent
+            hover:border-solid
+    }
+
+    nav a:hover,
+    nav a.active {
+        @apply
+        border-sky-600
+        text-sky-600
+        py-2
+        lg:py-0
+    }
+
+    section#home {
+        @apply
+            lg:px-[9%]
+    }
+
+    #home {
+        @apply
+            flex
+            flex-col
+            gap-[2rem]
+            px-[5rem]
+            py-0
+            lg:flex-row
+            lg:px-0
+            lg:py-0
+            lg:justify-center
+            lg:items-center
+            lg:gap-[5rem]
+    }
+
+    #home .home-content h1 {
+        @apply
+            text-white
+            text-[3rem]
+            lg:text-[4rem]
+            font-[700]
+            leading-[1]
+    }
+    .home-content span {
+        @apply
+            text-sky-600
+    }
+
+    .home-content h3 {
+        @apply
+            text-white
+            text-[1.5rem]
+            lg:text-[2rem]
+            font-[450]
+    }
+    .home-img {
+        @apply
+            rounded-[50%]
+    }
+
+    .home-img img {
+        @apply
+            lg:relative
+            lg:w-[32vw]
+            rounded-[50%]
+            shadow-xl
+            md:w-[50vw]
+            w-[70vw]
+            mt-[4rem]
+            lg:mt-0
+            hover:shadow-xl
+            hover:shadow-gray-400
+            duration-500
+            mx-auto
+    }
+
+    .social-icons a {
+        @apply
+            inline-flex
+            justify-center
+            items-center
+            w-[4rem]
+            h-[4rem]
+            bg-transparent
+            border-[.2rem]
+            border-sky-600
+            text-[2rem]
+            rounded-full
+            my-[2rem]
+            mx-2
+            hover:scale-105
+    }
+
+    .btn {
+        @apply
+            text-sky-600
+            border-[2px]
+            border-sky-600
+            inline-block
+            px-3
+            py-2
+            font-[600]
+            tracking-wide
+            text-[1.4rem]
+            rounded-[4rem]
+            hover:shadow-2xl
+            hover:shadow-sky-600
+            duration-300
+            hover:text-white
+            hover:bg-sky-600
+            cursor-pointer
+            active:shadow-none
+    }
+    
+    section#education {
+        @apply pt-[10vh]
+    }
+    #education h1 {
+        @apply
+            text-white
+            text-[3rem]
+            font-[700]
+            leading-[1]
+            lg:text-[4rem]
+            text-center
+    }
+    section#skills h1 {
+        @apply
+            my-5
+            text-white
+            text-[3rem]
+            font-[700]
+            leading-[1]
+            lg:text-[4rem]
+            text-center
+    }
+    section#skills .container1 {
+        @apply
+            grid
+            grid-cols-1
+            lg:grid-cols-2
+    }
+    section#experience h1 {
+        @apply
+            my-5
+            text-white
+            text-[3rem]
+            font-[700]
+            leading-[1]
+            lg:text-[4rem]
+            text-center
+    }
+}
