@@ -244,4 +244,11 @@
             lg:text-[4rem]
             text-center
     }
+
+    section#contact {
+        @apply flex items-center justify-center flex-col
+    }
+    #contact h1 {
+        @apply text-[3rem] my-5 text-white font-[700] leading-[1] lg:text-[4rem] text-center
+    }
 }

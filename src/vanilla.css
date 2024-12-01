@@ -227,3 +227,51 @@ section .container1 {
     margin: 10px 0;
   }
 }
+
+#contact form {
+  width: 100%;
+  text-align: center;
+}
+
+.input-box .input-field {
+  width: 100%;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px 25px;
+  background: transparent;
+  border: 2px solid #264de4;
+  outline: none;
+  border-radius: 6px;
+  color: #ededed;
+  margin: 12px 0;
+  font-size: 16px;
+}
+.field .item::placeholder {
+  color: rgba(255, 255, 255, .3);
+}
+
+form .textarea-field .item {
+  resize: none;
+}
+
+form button {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 450;
+  background-color: #264de4;
+  border-radius: 1rem;
+  padding: 8px 20px;
+}
+form button:hover {
+  box-shadow: 0 0 10px #ededed;
+  transition: all .3s ease;
+  transition-duration: .3s;
+}
+
+@media(min-width: 790px) {
+  .field .item {
+    width: 600px;
+  }
+}
